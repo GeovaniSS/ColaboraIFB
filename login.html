@@ -5,24 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apoio Acadêmico</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <section class="">
+<body> 
+    <section class="container">
+        <div class="container-image">
+            <img src="img/checklist.png" alt="Checklist">
+        </div>
 
+        <form action="">
+            <div class="img-circle">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <h1>Bem-vindo!</h1>
+
+            <div class="input-container">
+                <div class="input-icon">
+                    <img class="icon" src="img/email-icon.png" alt="Ícone de E-mail">
+                </div>
+                <div class="first-input">
+                    <label for="email">E-mail:</label>
+                    <input id="email" type="email" placeholder="" required autofocus>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-icon">
+                    <img class="icon" src="img/senha-icon.png" alt="Ícone de Password">
+                </div>
+                <div class="second-input">
+                    <label for="senha">Senha:</label>
+                    <input id="senha" type="password" placeholder="" required>
+                    <span class="input-quest">Esqueceu a senha?</span>
+                </div>
+            </div>
+            <input type="submit" name="btn-entrar" value="ENTRAR">
+        </form>
     </section>
 
-    <section class="">
-        <h1>Bem-vindo!</h1>
-        
-        <label for="email">E-mail:</label>
-        <input id="email" type="email" placeholder="" required>
-
-        <label for="senha">Senha:</label>
-        <input id="senha" type="password" placeholder="" required>
-
-        <span>Esqueceu a senha?</span>
-
-        <input type="submit">
-    </section>
 </body>
 </html>

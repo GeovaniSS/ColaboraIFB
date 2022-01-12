@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;0,900;1,400&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    color: #C4C4C4;
+}
+
+h1 {
+    font-size: 36px; 
+    font-weight: bold;
+    color: #6D6D6D;
+    padding-top: 10px;
+}
+
+.container {
+    display: flex;
+    width: 100%; /*O container ocupara 100% da largura*/
+    height: 100vh; /*A altura será de 100 da viewport */
+}
+
+.container-image {
+    flex: 2;
+    background-color: #E9FEF9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container-image img {
+    width: 85%;
+}
+
+form { 
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10%;
+}   
+
+.img-circle {
+    width: 120px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #E9FEF9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    width: 100%;
+    height: 6vh;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.input-icon {
+    padding-top: 20px;
+    margin-right: 5px;
+}
+
+.first-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.second-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+span { 
+    align-self: flex-end;
+}
+
+.icon {
+    width: 30px; 
+    height: 20px;
+    margin-right: 10px;
+}
+
+form label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+form input[type="submit"] {
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: bold;
+    width: 50%;
+    border-radius: 40px;
+    background-color: #14A883;
+    color: #fff;
+    transition: 0.5s;
+}
+
+form input[type="submit"]:hover {
+    width: 60%;
+}
