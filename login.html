@@ -6,41 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apoio Acadêmico</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/749211d7c1.js" crossorigin="anonymous"></script>
 </head>
 <body> 
     <section class="container">
-        <div class="container-image">
+        <div class="img-container">
             <img src="img/checklist.png" alt="Checklist">
         </div>
 
-        <form action="">
-            <div class="img-circle">
-                <img src="img/logo.png" alt="logo">
-            </div>
-            <h1>Bem-vindo!</h1>
+        <div class="login-container">
 
-            <div class="input-container">
-                <div class="input-icon">
-                    <img class="icon" src="img/email-icon.png" alt="Ícone de E-mail">
+            <div class="text-container">
+                <div class="img-circle">
+                    <img src="img/logo.png" alt="logo">
                 </div>
-                <div class="first-input">
-                    <label for="email">E-mail:</label>
-                    <input id="email" type="email" placeholder="" required autofocus>
-                </div>
+                <h1>Bem-vindo!</h1>
             </div>
 
             <div class="input-container">
-                <div class="input-icon">
-                    <img class="icon" src="img/senha-icon.png" alt="Ícone de Password">
+                <div class="input-text">
+                    <input id="email" type="email" placeholder="E-mail Institucional" required autofocus>
+                    <label for="email"><i class="far fa-envelope"></i></label>
                 </div>
-                <div class="second-input">
-                    <label for="senha">Senha:</label>
-                    <input id="senha" type="password" placeholder="" required>
-                    <span class="input-quest">Esqueceu a senha?</span>
+                <div class="input-text">
+                    <input id="senha" type="password" placeholder="Senha" required>
+                    <label for="senha"><i class="fas fa-lock"></i></label>
                 </div>
+                <input type="submit" name="btn-entrar" value="ENTRAR">
             </div>
-            <input type="submit" name="btn-entrar" value="ENTRAR">
-        </form>
+        </div>
     </section>
 
 </body>
