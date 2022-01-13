@@ -14,5 +14,8 @@
 	- Quando o input:focus for acionado o label mudará de posição com position (top left, bottom, right)
 	- Dúvida: Depois que o label muda de posição e algo é digitado no input, o label volta para a posição inicial e sobrepõe o texto. Como resolver? 
 	- O que eu quero? - Manter o label em cima do input depois que o usuário tenha digitado algo dentro do input 
+	- Solução: Utilizar a pseudo-classe :valid que representa qualquer elemento do form cujo conteúdo seja validado com sucesso. Isso faz com que os campos válidos adotem uma aparência que ajudem os usuários a confirmar que seus dados estão formatados corretamente
+	- Aplicar: Utilziar a pseudo-classe :valid para que quando um conteúdo de um input seja validado, o label não volte para a posição inicial. 
+	- pseudoclasse :invalid
 
 ## Adicionar box-shadow no input

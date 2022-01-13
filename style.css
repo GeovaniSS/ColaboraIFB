@@ -132,13 +132,14 @@ input:hover {
     border-bottom: 3px solid #14A883;
 }
 
-.input-text input:focus + .label-text {
+.input-text input:focus + .label-text, input:valid + .label-text {
     top: 15px;   /*O label que estava como "placeholder" vai subir e se posicionar como label (em cima do input) */
-    left: 5px;
+    left: 5px;   /*Com o input:valid se o input for válido, o label não retornará para sua posição inicial */ 
 } 
 
-.input-text input:focus ~ .label-icon {
-    color: #14A883;  /*O icon vai mudar de cor junto com o focus do input*/ 
+.input-text input:focus ~ .label-icon, input:valid ~ .label-icon{
+    color: #14A883;  /*O ícone vai mudar de cor junto com o focus do input*/ 
+                       /*O ícone permanecerá na cor verde, caso o campo seja válido*/ 
 }
 
 /*-------------------------------*/
