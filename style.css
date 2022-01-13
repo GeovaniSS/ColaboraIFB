@@ -20,13 +20,19 @@ h1 {
     padding-top: 10px;
 }
 
+/*----------------------------------*/
+/*  Configuração do Layout Padrão  */
+/*----------------------------------*/
+
 .container {
+    /*O container principal ocupará toda a tela*/
     display: flex;
-    width: 100%; /*O container ocupara 100% da largura*/
-    height: 100vh; /*A altura será de 100 da viewport */
+    width: 100vw; 
+    height: 100vh; 
 }
 
 .img-container {
+    /*Ocupará o dobro de espaço em relação ao login-container*/
     flex: 2;
     background-color: #E9FEF9;
     display: flex;
@@ -36,7 +42,7 @@ h1 {
 }
 
 .img-container img {
-    width: 85%;
+    width: 80%;
 }
 
 .login-container {
@@ -46,6 +52,10 @@ h1 {
     justify-content: center;
     padding-bottom: 10%;
 }
+
+/*---------------------------------------*/
+/*  Texto e Imagem dentro de um Círculo  */
+/*--------------------------------------*/
 
 .text-container {
     display: flex;
@@ -64,6 +74,10 @@ h1 {
     align-items: center;
 }
 
+/*----------------------------------*/
+/*  Configurações do Input e Label  */
+/*----------------------------------*/
+
 .input-container {
     display: flex;
     flex-direction: column;
@@ -71,20 +85,33 @@ h1 {
 }
 
 .input-text {
-    position: relative;
+    position: relative; /*Container em cada input*/
 }
 
-label {
+.label-text { 
+    /* Configuração do Label que inicialmente funcionará como placeholder (dentro do input)*/
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute; 
+    color: #949494;
+    top: 53px;
+    left: 50px;
+    margin-bottom: 5px;
+}
+
+.label-icon {
+    /* Configuração do Label Personalizado - ícone (dentro do input) */
     font-size: 25px;
     position: absolute; 
-    top: 34px;
+    top: 45px;
     left: 15px;
+    color: #CCCCCC;
 }
 
 input {
     width: 400px;
     height: 45px;
-    margin-top: 30px;
+    margin-top: 40px;
     outline: none;
     border-radius: 5px;
     border: 1px solid #d1d1d1;
@@ -93,33 +120,39 @@ input {
     transition: 0.2s ease-in-out;
 }
 
-input::placeholder {
-    color: #949494;
-}
+/*-------------------------------*/
+/*  Animações do Input e Label   */
+/*-------------------------------*/
 
 input:hover {
     border-bottom: 3px solid #14A883;
 }
 
-input:focus {
+.input-text input:focus {
     border-bottom: 3px solid #14A883;
 }
 
-input:focus + label {
-    color: #14A883;
+.input-text input:focus + .label-text {
+    top: 15px;   /*O label que estava como "placeholder" vai subir e se posicionar como label (em cima do input) */
+    left: 5px;
+} 
+
+.input-text input:focus ~ .label-icon {
+    color: #14A883;  /*O icon vai mudar de cor junto com o focus do input*/ 
 }
 
+/*-------------------------------*/
+/*     Configuração do Botão     */
+/*-------------------------------*/
+
 input[type="submit"] {
-    font-family: 'Poppins';
-    font-size: 24px;
-    font-weight: bold;
-    padding: 0; 
-    text-align: center;
     width: 300px;
     height: 50px;
     border-radius: 40px;
     background-color: #14A883;
     color: #fff;
+    padding: 0;
+    font: bold 24px 'Poppins';
     text-align: center;
     transition: 0.5s;
 }
