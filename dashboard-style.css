@@ -1,0 +1,146 @@
+@charset "UTF-8"; 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;0,900;1,400&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+}
+
+body {
+    background-color: #ECEEF4;
+    font-family: 'Poppins';
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h5 {
+    font-size: 14px;
+    color: #8D90A3;
+}
+
+span {
+    color: #8D90A3;
+}
+
+button {
+    background-color: transparent   ;
+}
+
+nav .nav-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+}
+
+nav .logo-area {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #EFFFFB;
+    padding: 25px;
+    width: 300px;
+    gap: 15px;
+}
+
+nav .logo-area .logo {
+    width: 80px;
+}
+
+nav .search-bar {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    border-radius: 12px;
+    background-color: #FFF;
+    position: absolute;
+    left: 18%;
+    padding: 10px;
+}
+
+nav .search-bar input[type="search"] {
+    margin-left: 10px;
+    background: transparent;
+    width: 100%;
+    height: 40px;
+}
+
+nav .search-bar input[type="search"]::placeholder {
+    font-family: 'Poppins';
+    font-size: 14px;
+}
+
+nav .profile-area {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    right: 3%;
+}
+
+nav .profile-area .notification-btn {
+    background-color: white;
+    width: 48px;
+    height: 48px;
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .profile-area .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo { 
+    margin-right: 10px;
+    align-self: flex-end;
+}
+
+.profile-photo img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: #8D90A3;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EFFFFB;
+    width: 300px;
+    height: 91vh;
+}
+
+aside .sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    height: 4.2rem;
+    top: 10%;
+    position: relative;
+}
+
+aside .sidebar a:last-child {
+    top: 90%;
+}
+
+aside .sidebar a span {
+    font-size: 1.7rem;
+}
