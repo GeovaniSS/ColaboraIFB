@@ -1,6 +1,6 @@
 @charset "UTF-8"; 
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;0,900;1,400&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
 
 :root {
     --color-principal: #14A883;
@@ -8,6 +8,8 @@
     --bg-color2: #fff;
     --menu-color: #EFFFFB;
     --text-color: #8D90A3;
+    --font-principal: 
+    --font-secundary: 
 }
 
 
@@ -28,6 +30,13 @@ h1 {
     font-size: 32px;
 }
 
+h4 {
+    font-family: 'Noto Sans';
+    font-weight: bold;
+    font-size: 18px;
+    color: #292C3D;
+}
+
 h5 {
     font-size: 14px;
     font-weight: normal;
@@ -46,6 +55,9 @@ a {
     text-decoration: none;
     color: #8D90A3;
 }
+
+
+/*=================== NAVIGATION ==================== */
 
 /*--------------------------*/
 /*  Container da Navegação  */
@@ -74,7 +86,7 @@ nav .logo-area {
 }
 
 nav .logo {
-    width: 80px;
+    width: 5rem;
 }
 
 /*-----------------------*/
@@ -89,7 +101,7 @@ nav .search-bar {
     height: 40px;
     border-radius: 12px;
     background-color: var(--bg-color2);
-    position: absolute;
+    position: absolute; /*Absoluto em relação ao nav-container */
     left: 18%;
     padding: 10px;
 }
@@ -132,7 +144,7 @@ nav .profile-area .notification-btn {
     background-color: white;
     width: 48px;
     height: 48px;
-    border-radius: 11px;
+    border-radius: 12px;
     margin-right: 30px;
     display: flex;
     justify-content: center;
@@ -171,29 +183,39 @@ nav .profile-area .profile {
 }
 
 .profile span:hover {
-    color: #14A883;
+    color: var(--color-principal);
 }
+
+/*=================== MAIN ==================== */
+
+main {
+    display: grid;
+    grid-template-columns: 18.75rem auto 18.75rem;
+    gap: 3rem; 
+}
+
+/*=================== ASIDE - MENU ==================== */
 
 /*---------------------------*/
 /*   Configuração do Menu   */
 /*--------------------------*/
 
-aside {
+main aside {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     background-color: var(--menu-color);
-    width: 300px;
+    width: 18.75rem;
     height: calc(100vh - 11.5vh);
 }
 
-aside .sidebar {
+main aside .sidebar {
     width: 100%;
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
-aside .sidebar a {
+main aside .sidebar a {
     display: flex;
     align-items: center;
     gap: 1.2rem;
@@ -202,11 +224,11 @@ aside .sidebar a {
     position: relative;
 }
 
-aside .sidebar a:last-child {
+main aside .sidebar a:last-child {
     top: 85%;
 }
 
-aside .sidebar a span {
+main aside .sidebar a span {
     font-size: 1.7rem;
 }
 
@@ -214,21 +236,232 @@ aside .sidebar a span {
 /*     Animações do Menu     */
 /*--------------------------*/
 
-aside .sidebar a:hover  {
+main aside .sidebar a:hover  {
     background-color: #cdfdf1
 }
 
-aside .sidebar a:hover::before {
+main aside .sidebar a:hover::before {
     content: '';
     width: 5px;
     height: 70px;
     background-color: #14A883;
 }
 
-aside .sidebar a:active{
+main aside .sidebar a:active{
     color: #14A883;
 }
 
-aside .sidebar a:active span {
+main aside .sidebar a:active span {
     color: #14A883;
 }
+
+/*=================== SECTION MIDDLE ==================== */
+
+
+
+/*=========== EXTERNAL CARDS ===========*/
+
+main section#middle .external-card-container {
+    display: flex; 
+    justify-content: space-between;
+}
+
+main section#middle .external-card {
+    width: 14.5rem;
+    height: 5.5rem;
+    padding: 1.8rem;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.11);
+    margin: 20px 0;  
+}
+
+main section#middle .external-card .card-icon {
+    flex: 1; 
+}
+
+main section#middle .external-card .card-icon span {
+    font-size: 35px;
+}
+
+main section#middle .external-card .card-content {
+    flex: 2; 
+}
+
+/*===========  COURSE CARDS ===========*/
+
+#course-title {
+    margin-top: 30px;
+}
+
+.course-card-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.course-card {
+    width: 21.875rem;
+    height: 14.25rem;
+    border-radius: 12px;
+    box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.11);
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.course-card .acess-button {
+    align-self: flex-end;
+}
+
+.course-card .card-title {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    gap: 15px;
+}
+
+.course-card .card-title > img {
+    width: 25%;
+    border-radius: 16px;
+}
+
+.course-card .card-title .course-title {
+    display: flex; 
+    flex-direction: column;
+    gap: 5px;
+}
+
+.course-card .card-title .course-title .professor {
+    display: flex; 
+    align-items: center;
+    gap: 2px;
+}
+
+.course-card .card-legend {
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.course-card .card-legend .course-information {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 12px 5px; 
+}
+
+/*=========== TASK TABLE ===========*/
+
+.task-table-container h1 {
+    margin-top: 30px; 
+}
+
+table {
+    margin-top: 10px; 
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table thead {
+    background-color: #bcffef;
+    height: 30px;
+}
+
+table > thead > tr > th {
+    border: none;
+}
+
+thead th:first-child {
+    border-radius: 100px 0 0px 200px;
+}
+
+thead th:last-child {
+    border-radius: 0 100px 200px 0;
+}
+
+table thead th {
+    font-family: 'Noto Sans';
+    letter-spacing: 6%;
+    font-size: 14px;
+    color: #14A883;
+    font-weight: bold;
+}
+
+table tbody {
+    background-color: #fff;
+    border-top: 1em solid var(--bg-color);
+}
+
+table tbody td {
+    height: 47px;
+    text-align: center;
+}
+
+table > tbody > tr > td {
+    border: none;
+}
+
+table tbody td:first-child {
+    border-radius: 16px 0 0 16px;
+}
+
+table tbody td:last-child {
+    border-radius: 0 16px 16px 0;
+}
+
+table tbody:last-child td:first-child {
+    border-radius: 16px 0 0 5px;
+}
+
+table tbody:last-child td:last-child {
+    border-radius: 0 16px 5px 0;
+}
+
+table h5 {
+    font-family: 'Noto Sans';
+    font-size: 14px;
+    color: #525359;
+}
+
+table tbody .task-delivery{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+table tbody .task-delivery > span {
+    color: #1DE9B6;
+}
+
+/*=================== SECTION RIGHT ==================== */
+
+section#right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    gap: 20px;
+}
+
+.calendar {
+    width: 290px;
+    height: 250px;
+    background-color: #fff;   
+    border-radius: 12px; 
+}
+
+.aulas {
+    width: 290px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+

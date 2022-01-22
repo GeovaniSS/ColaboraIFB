@@ -19,3 +19,8 @@
 	- pseudoclasse :invalid
 
 ## Adicionar box-shadow no input
+
+## TABELAS - DIFICULDADES
+## Propriedade border-colapse = collapse remove o espaço entre bordas de tabelas
+## Como colocar border-radius na tabela? -> 
+## Como separar o thead do tbody??? alternativas
