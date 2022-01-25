@@ -454,7 +454,7 @@ section#right {
 
 .aulas {
     position: relative;
-    width: 290px;
+    width: 300px;
     height: 514px;
     background-color: #fff;
     border-radius: 12px;
@@ -475,8 +475,8 @@ section#right {
     align-items: center;
     padding: 2px 4px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    position: absolute;
+    border-radius: 8px;
+    position: absolute; 
     top: 5%;
     right: 6%;
 }
@@ -492,7 +492,7 @@ section#right {
 .day-class .class-option {
     background-color: #F0F0F0;
     padding: 10px;
-    margin: 2px 0 5px 20px;
+    margin: 2px 0 2px 20px;
     border-left: 5px solid #14A883;
 }
 
@@ -517,10 +517,14 @@ section#right {
     font-weight: normal;
 }
 
+.day-class h6#class-end {
+    margin-bottom: 5px;
+}
+
 /*=========== AULAS SELECIONADA ===========*/
 
 .class-active {
-    display: flex; /*ADICIONAR JAVASCRIPT*/
+    display: none; /*ADICIONAR JAVASCRIPT*/
     flex-direction: column;
     background-color: #F0F0F0;
     border-radius: 15px;
@@ -536,13 +540,13 @@ section#right {
 .class-active-icons {
     display: flex;
     justify-content: space-between;
-    margin: 5px 0; 
 }
 
 .class-active-information {
     display: flex;
     align-items: center;
     gap: 5px;
+    margin: 5px 0px; 
 }
 
 .class-active-information h6 {
@@ -556,7 +560,12 @@ section#right {
     text-align: center;
     font-weight: bold;
     background-color: #14A883;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.219);
     padding: 10px;
     border-radius: 8px;
     color: #fff;
+}
+
+.class-active a:hover {
+    background-color: #118f6fc5;
 }

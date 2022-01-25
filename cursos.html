@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/749211d7c1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <title>Cursos</title>
+    <link rel="stylesheet" href="dashboard-style.css">
+    <link rel="stylesheet" href="cursos-style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo-area">
+                <img src="img/logo.png" class="logo">
+                <h1>iEducar</h1>
+            </div>
+
+            <div class="search-bar">
+                <input type="search" placeholder="Search">
+                <span class="material-icons-sharp">search</span>
+            </div>
+
+            <div class="profile-area">
+                <div class="notification-btn">
+                    <button><span class="material-icons-sharp">notifications</span></button>
+                    <!--COLOCAR JAVASCRIPT // INTERAÇÃO COM O BOTÃO DE NOTIFICAÇÕES-->
+                </div>
+
+                <div class="profile">
+                    <div class="profile-photo">
+                        <img src="img/profile-photo.png">
+                    </div>
+                    <h5>Usuário</h5>
+                    <span class="material-icons-sharp">expand_more</span>
+                    <!--COLOCAR JAVASCRIPT // INTERAÇÃO COM O BOTÃO DE DROPDOWN-->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--MAIN-->
+    <main> 
+        <!--MENU-->
+        <aside>
+            <div class="sidebar">
+                <a href="dashboard.html">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">calendar_month</span>
+                    <h3>Calendário</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">book</span>
+                    <h3>Cursos</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">attach_file</span>
+                    <h3>Atividades</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">cast_for_education</span>
+                    <h3>Externos</h3>
+                </a>
+        
+                <a href="login.html">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Sair</h3>
+                </a>
+            </div>
+        </aside>
+
+        <section id="cursos">
+            <h1>Cursos Inscritos</h1>
+
+            <!-- CARDS DOS CURSOS -->
+            <div class="course-card-container">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="img/rdc-grande.jpg" class="course">
+                        <img src="img/professor-rdc.jpg" class="course-professor">
+                        <h6 class="course-day">Segunda</h6>
+                    </div>
+                    <div class="course-content">
+                        <h3>Redes de Computadores</h3>
+                        <h5>Diógenes Reis</h5>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="img/rdc-grande.jpg" class="course">
+                        <img src="img/professor-rdc.jpg" class="course-professor">
+                        <h6 class="course-day">Segunda</h6>
+                    </div>
+                    <div class="course-content">
+                        <h3>Lógica de Programação</h3>
+                        <h5>Ione Goulart</h5>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="img/rdc-grande.jpg" class="course">
+                        <img src="img/professor-rdc.jpg" class="course-professor">
+                        <h6 class="course-day">Segunda</h6>
+                    </div>
+                    <div class="course-content">
+                        <h3>Introdução a Computação</h3>
+                        <h5>Hugo do Carmo</h5>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="img/rdc-grande.jpg" class="course">
+                        <img src="img/professor-rdc.jpg" class="course-professor">
+                        <h6 class="course-day">Segunda</h6>
+                    </div>
+                    <div class="course-content">
+                        <h3>Construção de Páginas</h3>
+                        <h5>Tiago Segato</h5>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="img/rdc-grande.jpg" class="course">
+                        <img src="img/professor-rdc.jpg" class="course-professor">
+                        <h6 class="course-day">Segunda</h6>
+                    </div>
+                    <div class="course-content">
+                        <h3>Metodologia Científica</h3>
+                        <h5>Denise Gomes</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
