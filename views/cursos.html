@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
     <script src="https://kit.fontawesome.com/749211d7c1.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-    <title>Cursos</title>
-    <link rel="stylesheet" href="dashboard-style.css">
-    <link rel="stylesheet" href="cursos-style.css">
+    <link rel="stylesheet" href="../styles/nav-style.css">
+    <link rel="stylesheet" href="../styles/menu-style.css">
+    <link rel="stylesheet" href="../styles/cursos-style.css">
 </head>
 <body>
+    <!--NAVIGATION-->
     <nav>
         <div class="nav-container">
             <div class="logo-area">
-                <img src="img/logo.png" class="logo">
+                <img src="../img/logo.png" class="logo">
                 <h1>iEducar</h1>
             </div>
 
@@ -31,7 +33,7 @@
 
                 <div class="profile">
                     <div class="profile-photo">
-                        <img src="img/profile-photo.png">
+                        <img src="../img/profile-photo.png">
                     </div>
                     <h5>Usuário</h5>
                     <span class="material-icons-sharp">expand_more</span>
@@ -54,7 +56,7 @@
                     <span class="material-icons-sharp">calendar_month</span>
                     <h3>Calendário</h3>
                 </a>
-                <a href="#">
+                <a href="cursos.html">
                     <span class="material-icons-sharp">book</span>
                     <h3>Cursos</h3>
                 </a>
@@ -67,13 +69,14 @@
                     <h3>Externos</h3>
                 </a>
         
-                <a href="login.html">
+                <a href="../index.html">
                     <span class="material-icons-sharp">logout</span>
                     <h3>Sair</h3>
                 </a>
             </div>
         </aside>
-
+        
+        <!-- SEÇÃO DOS CURSOS -->
         <section id="cursos">
             <h1>Cursos Inscritos</h1>
 
@@ -81,8 +84,8 @@
             <div class="course-card-container">
                 <div class="course-card">
                     <div class="course-image">
-                        <img src="img/rdc-grande.jpg" class="course">
-                        <img src="img/professor-rdc.jpg" class="course-professor">
+                        <a href="rdc.html"><img src="../img/rdc.jpg" class="course"></a>
+                        <img src="../img/professor-rdc.jpg" class="course-professor">
                         <h6 class="course-day">Segunda</h6>
                     </div>
                     <div class="course-content">
@@ -93,9 +96,9 @@
 
                 <div class="course-card">
                     <div class="course-image">
-                        <img src="img/rdc-grande.jpg" class="course">
-                        <img src="img/professor-rdc.jpg" class="course-professor">
-                        <h6 class="course-day">Segunda</h6>
+                        <a href="ldp.html"><img src="../img/ldp.jpg" class="course"></a>
+                        <img src="../img/professor-ldp.jpg" class="course-professor">
+                        <h6 class="course-day">Terça</h6>
                     </div>
                     <div class="course-content">
                         <h3>Lógica de Programação</h3>
@@ -105,9 +108,9 @@
 
                 <div class="course-card">
                     <div class="course-image">
-                        <img src="img/rdc-grande.jpg" class="course">
-                        <img src="img/professor-rdc.jpg" class="course-professor">
-                        <h6 class="course-day">Segunda</h6>
+                        <a href="iac.html"><img src="../img/hardware.jpg" class="course"></a>
+                        <img src="../img/professor-hardware.jpg" class="course-professor">
+                        <h6 class="course-day">Quarta</h6>
                     </div>
                     <div class="course-content">
                         <h3>Introdução a Computação</h3>
@@ -117,9 +120,9 @@
 
                 <div class="course-card">
                     <div class="course-image">
-                        <img src="img/rdc-grande.jpg" class="course">
-                        <img src="img/professor-rdc.jpg" class="course-professor">
-                        <h6 class="course-day">Segunda</h6>
+                        <a href="cpi.html"><img src="../img/cpi.jpg" class="course"></a>
+                        <img src="../img/professsor-cpi.jpg" class="course-professor">
+                        <h6 class="course-day">Quinta</h6>
                     </div>
                     <div class="course-content">
                         <h3>Construção de Páginas</h3>
@@ -129,9 +132,9 @@
 
                 <div class="course-card">
                     <div class="course-image">
-                        <img src="img/rdc-grande.jpg" class="course">
-                        <img src="img/professor-rdc.jpg" class="course-professor">
-                        <h6 class="course-day">Segunda</h6>
+                        <a href="metodologia.html"><img src="../img/metodologia.jpg" class="course"></a>
+                        <img src="../img/professor-metodologia.jpg" class="course-professor">
+                        <h6 class="course-day">Sexta</h6>
                     </div>
                     <div class="course-content">
                         <h3>Metodologia Científica</h3>
@@ -140,8 +143,6 @@
                 </div>
             </div>
         </section>
-
     </main>
-
 </body>
 </html>

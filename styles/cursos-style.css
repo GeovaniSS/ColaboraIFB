@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
 main {
+    display: grid;
     grid-template-columns: 300px auto;
+    gap: 50px;
     margin-right: 50px;
 }
 
@@ -10,14 +12,24 @@ main h1 {
 }
 
 main section#cursos .course-card-container {
+    margin-top: 25px;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 main section#cursos .course-card {
-    background-color: #fff;
-    width: 17em;
-    height: 17rem;
+    width: 16em;
+    height: 19rem;
+    border-radius: 16px;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.164);
+    transition: 0.5s;
+}
+
+main section#cursos .course-card:hover {
+    width: 18rem;
+    height: 21rem;
+    box-shadow: 8px 8px 32px rgba(0, 0, 0, 0.205);
 }
 
 main section#cursos .course-image {
@@ -34,6 +46,8 @@ main section#cursos .course-image .course {
 
 main section#cursos .course-image .course-professor {
     position: absolute;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     left: -5%;
     top: -5%;
@@ -47,10 +61,21 @@ main section#cursos .course-image .course-day {
     padding: 2px 8px;
     font-weight: normal;
     color: #fff;
-    background-color: rgb(74, 74, 74, 58%);
+    background-color: rgba(74, 74, 74, 0.726);
     border-radius: 10px;
 }
 
 main section#cursos .course-content {
+    margin-top: 10px;
     text-align: center;
+}
+
+main section#cursos .course-content h3 {
+    font-weight: 600;
+    font-size: 16px; 
+}
+
+main section#cursos .course-content h5 {
+    font-size: 14px;
+    color: #737583;
 }
