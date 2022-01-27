@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades</title>
+    <script src="https://kit.fontawesome.com/749211d7c1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/nav-style.css">
+    <link rel="stylesheet" href="../styles/menu-style.css">
+    <link rel="stylesheet" href="../styles/atividades-style.css">
+</head>
+<body>
+    <!--NAVIGATION-->
+    <nav>
+        <div class="nav-container">
+            <div class="logo-area">
+                <img src="../img/logo.png" class="logo">
+                <h1>iEducar</h1>
+            </div>
+
+            <div class="search-bar">
+                <input type="search" placeholder="Search">
+                <span class="material-icons-sharp">search</span>
+            </div>
+
+            <div class="profile-area">
+                <div class="notification-btn">
+                    <button><span class="material-icons-sharp">notifications</span></button>
+                    <!--COLOCAR JAVASCRIPT // INTERAÇÃO COM O BOTÃO DE NOTIFICAÇÕES-->
+                </div>
+
+                <div class="profile">
+                    <div class="profile-photo">
+                        <img src="../img/profile-photo.png">
+                    </div>
+                    <h5>Usuário</h5>
+                    <span class="material-icons-sharp">expand_more</span>
+                    <!--COLOCAR JAVASCRIPT // INTERAÇÃO COM O BOTÃO DE DROPDOWN-->
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!--MAIN-->
+    <main> 
+        <!--MENU-->
+        <aside>
+            <div class="sidebar">
+                <a href="dashboard.html">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">calendar_month</span>
+                    <h3>Calendário</h3>
+                </a>
+                <a href="cursos.html">
+                    <span class="material-icons-sharp">book</span>
+                    <h3>Cursos</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">attach_file</span>
+                    <h3>Atividades</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">cast_for_education</span>
+                    <h3>Externos</h3>
+                </a>
+        
+                <a href="../index.html">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Sair</h3>
+                </a>
+            </div>
+        </aside>
+
+        <section id="middle">
+            <div class="task-table-container">
+                <h1>Atividades</h1>
+                <table>
+                    <thead>
+                        <tr class="task-title">
+                            <th>Atividade</th>
+                            <th>Curso</th>
+                            <th>Tipo</th>
+                            <th>Início</th>
+                            <th>Entrega</th>
+                            <th>Status</th>
+                            <th>Nota</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h5>Projeto Final de CPI</h5>
+                            </td>
+                            <td>
+                                <h5>Construção de Páginas</h5>
+                            </td>
+                            <td>
+                                <h5>Prova</h5>
+                            </td>
+                            <td>
+                                <h5>27/01/22</h5>
+                            </td>
+                            <td>    
+                                <h5>06/02/22</h5>
+                            </td>
+                            <td class="task-delivery">
+                                <span class="material-icons-sharp complete">check_circle</span>
+                                <h5>Entregue</h5>
+                            </td>
+                            <td>
+                                <h5>4.0</h5>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h5>Prova de Computação</h5>
+                            </td>
+                            <td>
+                                <h5>Introdução a Computação</h5>
+                            </td>
+                            <td>
+                                <h5>Prova</h5>
+                            </td>
+                            <td>
+                                <h5>02/02/22</h5>
+                            </td>
+                            <td>
+                                <h5>02/02/22</h5>
+                            </td>
+                            <td class="task-delivery">
+                                <span class="material-icons-sharp complete">check_circle</span>
+                                <h5>Entregue</h5>
+                            </td>
+                            <td>
+                                <h5>100</h5>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h5>Exame Final de Redes</h5>
+                            </td>
+                            <td>
+                                <h5>Redes de Computadores</h5>
+                            </td>
+                            <td>
+                                <h5>Prova</h5>
+                            </td>
+                            <td>
+                                <h5>31/01/22</h5>
+                            </td>
+                            <td>
+                                <h5>31/01/22</h5>
+                            </td>
+                            <td class="task-delivery">
+                                <span class="material-icons-sharp complete">check_circle</span>
+                                <h5>Entregue</h5>
+                            </td>
+                            <td>
+                                <h5>40%</h5>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h5>Atividade 17</h5>
+                            </td>
+                            <td>
+                                <h5>Construção de Páginas</h5>
+                            </td>
+                            <td>
+                                <h5>Atividade</h5>
+                            </td>
+                            <td>
+                                <h5>27/01/22</h5>
+                            </td>
+                            <td>
+                                <h5>30/01/22</h5>
+                            </td>
+                            <td class="task-delivery">
+                                <span class="material-icons-sharp no-complete">cancel</span>
+                                <h5>Não Entregue</h5>
+                            </td>
+                            <td>
+                                <h5>S/N</h5>
+                            </td>
+                        </tr>
+                    </tbody>
+
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h5>Atividade 06</h5>
+                            </td>
+                            <td>
+                                <h5>Introdução a Computação</h5>
+                            </td>
+                            <td>
+                                <h5>Atividade</h5>
+                            </td>
+                            <td>
+                                <h5>26/01/21</h5>
+                            </td>
+                            <td>
+                                <h5>02/02/22</h5>
+                            </td>
+                            <td class="task-delivery">
+                                <span class="material-icons-sharp no-complete">cancel</span>
+                                <h5>Não Entregue</h5>
+                            </td>
+                            <td>
+                                <h5>S/N</h5>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h5>Prova de Lógica</h5>
+                            </td>
+                            <td>
+                                <h5>Lógica de Programação I</h5>
+                            </td>
+                            <td>
+                                <h5>Prova</h5>
+                            </td>
+                            <td>
+                                <h5>25/01/22</h5>
+                            </td>
+                            <td>
+                                <h5>25/01/22</h5>
+                            </td>
+                            <td class="task-delivery">
+                                <span class="material-icons-sharp complete">check_circle</span>
+                                <h5>Entregue</h5>
+                            </td>
+                            <td>
+                                <h5>8.0</h5>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h5>Trabalho de Metodologia</h5>
+                            </td>
+                            <td>
+                                <h5>Metodologia Científica</h5>
+                            </td>
+                            <td>
+                                <h5>Trabalho</h5>
+                            </td>
+                            <td>
+                                <h5>21/01/22</h5>
+                            </td>
+                            <td>
+                                <h5>28/01/22</h5>
+                            </td>
+                            <td class="task-delivery">
+                                <span class="material-icons-sharp complete">check_circle</span>
+                                <h5>Entregue</h5>
+                            </td>
+                            <td>
+                                <h5>4.0</h5>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h5>Exame dos Módulos 14-15</h5>
+                            </td>
+                            <td>
+                                <h5>Redes de Computadores</h5>
+                            </td>
+                            <td>
+                                <h5>Atividade</h5>
+                            </td>
+                            <td>
+                                <h5>17/01/22</h5>
+                            </td>
+                            <td>
+                                <h5>28/01/22</h5>
+                            </td>
+                            <td class="task-delivery">
+                                <span class="material-icons-sharp no-complete">cancel</span>
+                                <h5>Não Entregue</h5>
+                            </td>
+                            <td>
+                                <h5>S/N</h5>
+                            </td>
+                        </tr>
+                    </tbody>
+                    
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h5>Exame dos Módulos 11-13</h5>
+                            </td>
+                            <td>
+                                <h5>Redes de Computadores</h5>
+                            </td>
+                            <td>
+                                <h5>Atividade</h5>
+                            </td>
+                            <td>
+                                <h5>10/01/22</h5>
+                            </td>
+                            <td>
+                                <h5>17/01/22</h5>
+                            </td>
+                            <td class="task-delivery">
+                                <span class="material-icons-sharp no-complete">cancel</span>
+                                <h5>Não Entregue</h5>
+                            </td>
+                            <td>
+                                <h5>S/N</h5>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h5>Atividade 16</h5>
+                            </td>
+                            <td>
+                                <h5>Construção de Páginas</h5>
+                            </td>
+                            <td>
+                                <h5>Atividade</h5>
+                            </td>
+                            <td>
+                                <h5>23/12/21</h5>
+                            </td>
+                            <td>
+                                <h5>05/01/22</h5>
+                            </td>
+                            <td class="task-delivery">
+                                <span class="material-icons-sharp complete">check_circle</span>
+                                <h5>Entregue</h5>
+                            </td>
+                            <td>
+                                <h5>S/N</h5>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
