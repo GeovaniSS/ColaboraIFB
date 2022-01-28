@@ -52,7 +52,6 @@ main aside {
 
 main aside .sidebar {
     width: 100%;
-    padding-left: 40px;
 }
 
 main aside .sidebar a {
@@ -70,21 +69,44 @@ main aside .sidebar a:last-child {
 
 main aside .sidebar a span {
     font-size: 1.7rem;
+    margin-left: 3rem;
 }
 
 /*---------------------------*/
 /*     Animações do Menu     */
 /*--------------------------*/
 
-main aside .sidebar a:hover  {
-    background-color: #cdfdf1
+main aside .sidebar a.active{
+    background: linear-gradient(to right, rgba(29,233,182, 10%), rgba(29,233,182, 10%));
+    color: #14A883;
 }
 
-main aside .sidebar a:hover::before {
+main aside .sidebar a.active span {
+    color: #14A883;
+}
+
+main aside .sidebar a.active::after {
     content: '';
-    width: 5px;
-    height: 70px;
+    width: 6px;
+    height: 100%;
     background-color: #14A883;
+    border-radius: 8px 0 0 8px;
+    position: absolute; /*Absoluto em relação ao link*/
+    right: 0;
+}
+
+main aside .sidebar a:hover  {
+    background: linear-gradient(to right, rgba(29,233,182, 10%), rgba(29,233,182, 10%));
+}
+
+main aside .sidebar a:hover::after {
+    content: '';
+    width: 6px;
+    height: 100%;
+    background-color: #14A883;
+    border-radius: 8px 0 0 8px;
+    position: absolute;
+    right: 0;
 }
 
 main aside .sidebar a:active{
