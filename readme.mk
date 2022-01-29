@@ -24,3 +24,9 @@
 ## Propriedade border-colapse = collapse remove o espaço entre bordas de tabelas
 ## Como colocar border-radius na tabela? -> 
 ## Como separar o thead do tbody??? alternativas
+
+
+# Menu selecionado 
+	- Como adicionar uma classe para o menu ativo pelo JavaScript com base na página atual
+	- location.href 
+	- Se o atributo href do link for idêntico ao location.href uma classe é adicionada ao link
