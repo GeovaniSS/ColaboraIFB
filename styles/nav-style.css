@@ -61,16 +61,20 @@ nav .nav-container {
 
 nav .logo-area {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     background-color: var(--menu-color);
-    padding: 1.5rem;
+    padding: 2rem;
     width: 300px;
-    gap: 15px;
+    gap: 5px;
+}
+
+nav .logo-area {
+    font-size: 30px;
 }
 
 nav .logo {
-    width: 5rem;
+    width: 4rem;
 }
 
 /*-----------------------*/

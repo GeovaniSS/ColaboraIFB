@@ -1,5 +1,5 @@
 /*======================================== SISTEMAS EXTERNOS ======================================== */
-const externalCardLink = document.querySelectorAll('div.external-card')
+const externalCardLink = document.querySelectorAll('.external-card')
 const cardsLength = externalCardLink.length
 
 for (let i = 0; i < cardsLength; i++) {
@@ -25,43 +25,49 @@ for (let i = 0; i < cardsLength; i++) {
     }
 }
 
-/*var Nead = document.getElementsByClassName('external-card')[0]
-var Portal = document.getElementsByClassName('external-card')[1]
-var Biblioteca = document.getElementsByClassName('external-card')[2]
-var Email = document.getElementsByClassName('external-card')[3]
+/*======================================== CURSOS ================================================*/
+const courseCards = document.querySelectorAll('.course-card')
+const couseCardsLength = courseCards.length
 
-function acessarNead() {
-    window.open('https://nead.ifb.edu.br/', "_blank")
+for (i = 0; i < couseCardsLength; i++) {
+    courseCards[i].addEventListener('click', acessarCursos)
+    function acessarCursos() {
+        switch(i) {
+            case 0:
+                window.open('http://127.0.0.1:5500/views/rdc.html')
+                break
+
+            case 1:
+                window.open('http://127.0.0.1:5500/views/cpi.html')
+                break
+                
+            case 2:
+                window.open('http://127.0.0.1:5500/views/rdc.html')
+                break
+        }
+    }
 }
 
-function acessarPortal() {
-    window.open('https://portaldoestudante.ifb.edu.br/', "_blank")
-}
 
-function acessarBiblioteca () {
-    window.open('https://plataforma.bvirtual.com.br/', "_blank")
-}
-
-function acessarEmail () {
-    window.open('https://www.gmail.com/', "_blank")
-}
-
-Nead.addEventListener('click', acessarNead)
-Portal.addEventListener('click', acessarPortal)
-Biblioteca.addEventListener('click', acessarBiblioteca)
-Email.addEventListener('click', acessarEmail)*/
-
+courseCards.addEventListener('click', acessarCurso)
 
 /*======================================== AULAS SÍNCRONAS ======================================== */
-var aulaSelecionada = document.querySelector('div.class-option') //Div da aula do dia
-var informaçõesdaAula = document.querySelector('div.class-active') //Div da aula clicada
+const aulaSelecionada = document.querySelector('.class-option') //Div da aula do dia
+const informaçõesdaAula = document.querySelector('.class-active') //Div da aula clicada
+const abrirAula = document.querySelector('.class-active a')
 
-function Opção() {
-    informaçõesdaAula.style.display = 'flex'
+function opçõesAula() {
+    if (informaçõesdaAula.style.display == 'none') {
+        informaçõesdaAula.style.display = 'flex'
+    }
+    else {
+        informaçõesdaAula.style.display = 'none'
+    }
 }
 
-function ClicarNovamente() {
+function acessarAula() {
     informaçõesdaAula.style.display = 'none'
 }
 
-aulaSelecionada.addEventListener('click', Opção, ClicarNovamente)
+aulaSelecionada.addEventListener('click', opçõesAula)
+abrirAula.addEventListener('click', acessarAula)
