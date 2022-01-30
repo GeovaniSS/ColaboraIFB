@@ -29,27 +29,24 @@ for (let i = 0; i < cardsLength; i++) {
 const courseCards = document.querySelectorAll('.course-card')
 const couseCardsLength = courseCards.length
 
-for (i = 0; i < couseCardsLength; i++) {
+for (let i = 0; i < couseCardsLength; i++) {
     courseCards[i].addEventListener('click', acessarCursos)
     function acessarCursos() {
         switch(i) {
             case 0:
-                window.open('http://127.0.0.1:5500/views/rdc.html')
+                window.open('http://127.0.0.1:5500/views/rdc.html', "_self")
                 break
 
             case 1:
-                window.open('http://127.0.0.1:5500/views/cpi.html')
+                window.open('http://127.0.0.1:5500/views/cpi.html', "_self")
                 break
                 
             case 2:
-                window.open('http://127.0.0.1:5500/views/rdc.html')
+                window.open('http://127.0.0.1:5500/views/rdc.html', "_self")
                 break
         }
     }
 }
-
-
-courseCards.addEventListener('click', acessarCurso)
 
 /*======================================== AULAS SÍNCRONAS ======================================== */
 const aulaSelecionada = document.querySelector('.class-option') //Div da aula do dia
