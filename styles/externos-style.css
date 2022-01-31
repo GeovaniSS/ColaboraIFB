@@ -1,0 +1,11 @@
+main {
+    display: grid;
+    grid-template-columns: 300px auto;
+    gap: 50px;
+    margin-right: 50px;
+}
+
+.external-card-container {
+    display: flex;
+    justify-content: space-between;
+}
