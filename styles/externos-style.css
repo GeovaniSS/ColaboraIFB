@@ -5,7 +5,47 @@ main {
     margin-right: 50px;
 }
 
+section#external-systems {
+  
+}
+
 .external-card-container {
+    margin-top: 2.5rem;
     display: flex;
     justify-content: space-between;
+}
+
+.external-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 18rem;
+    height: 13rem;
+    background-color: #0D6952;
+    box-shadow: 4px 7px 8px rgba(0, 0, 0, 0.212);
+    border-radius: 8px;
+}
+
+.external-card img {
+    width: 15rem;
+}
+
+.external-card span {
+    font-size: 10rem;
+    color: #fff;
+}
+
+.external-card h3 {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -5.5%;
+    color: #fff;
+
+}
+
+.footer {
+    margin-top: 34rem; 
+    color: #555555;
+    border-top: 1px solid #CAD0D6;
 }

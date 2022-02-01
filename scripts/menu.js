@@ -5,6 +5,6 @@ const menuLength = menuItems.length
 
 for (let i = 0; i < menuLength; i++) {
     if (menuItems[i].href === activePage) {
-        menuItems[i].classList.add('active')
+        menuItems[i].classList.toggle('active')
     }
 }
