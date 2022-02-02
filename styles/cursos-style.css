@@ -79,3 +79,19 @@ main section#cursos .course-content h5 {
     font-size: 14px;
     color: #737583;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 3px;
+    border-top: 1px solid #CAD0D6;
+}
+
+footer a {
+    color: #555555;
+}
+
+footer a:hover {
+    color: #0D6952;
+}

@@ -5,13 +5,6 @@ main {
     margin-right: 50px;
 }
 
-section#external-systems {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-
 .external-card-container {
     margin-top: 2.5rem;
     display: flex;
@@ -49,15 +42,18 @@ section#external-systems {
 
 }
 
-.footer {
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     margin-bottom: 3px;
     border-top: 1px solid #CAD0D6;
 }
 
-.footer a {
+footer a {
     color: #555555;
 }
 
-.footer a:hover {
+footer a:hover {
     color: #0D6952;
 }
