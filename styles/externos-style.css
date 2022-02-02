@@ -6,7 +6,10 @@ main {
 }
 
 section#external-systems {
-  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
 .external-card-container {
@@ -16,6 +19,7 @@ section#external-systems {
 }
 
 .external-card {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -23,6 +27,7 @@ section#external-systems {
     width: 18rem;
     height: 13rem;
     background-color: #0D6952;
+    text-transform: uppercase;
     box-shadow: 4px 7px 8px rgba(0, 0, 0, 0.212);
     border-radius: 8px;
 }
@@ -45,7 +50,14 @@ section#external-systems {
 }
 
 .footer {
-    margin-top: 34rem; 
-    color: #555555;
+    margin-bottom: 3px;
     border-top: 1px solid #CAD0D6;
+}
+
+.footer a {
+    color: #555555;
+}
+
+.footer a:hover {
+    color: #0D6952;
 }

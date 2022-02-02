@@ -24,3 +24,15 @@
 ## Propriedade border-colapse = collapse remove o espaço entre bordas de tabelas
 ## Como colocar border-radius na tabela? -> 
 ## Como separar o thead do tbody??? alternativas
+
+
+## Dropdown com JavaScript 
+	- Notificações
+	- Perfil do Usuário 
+	- Aulas Síncronas
+	- Resultados por página em Atividades
+	
+
+## Modais - Como criar modal 
+	- Botão criar atividade (Modal)
+	- Filtro de atividades (Modal)

@@ -20,6 +20,7 @@ main section#middle .external-card-container {
 }
 
 main section#middle .external-card {
+    cursor: pointer;
     width: 14.5rem;
     height: 5.5rem;
     padding: 1.8rem;
@@ -57,6 +58,7 @@ main section#middle .external-card .card-content {
 }
 
 .course-card {
+    cursor: pointer;
     width: 21.875rem;
     height: 14.25rem;
     border-radius: 12px;

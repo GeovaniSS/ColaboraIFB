@@ -1,0 +1,163 @@
+main {
+    display: grid;
+    grid-template-columns: 300px auto;
+    gap: 50px;
+    margin-right: 50px;
+}
+
+/*================= COURSE HEADER =================== */
+
+#course-header {
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(20, 168, 131, 20%), rgba(20,168,131));
+    color: white;
+    font-family: 'Noto Sans';
+    margin: 0 -50px;
+    padding: 100px 50px 80px 50px;
+    top: 0;
+    position: absolute;
+    overflow-x: hidden;
+}
+
+#course-header h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+#course-header h1 {
+    font-size: 42px;
+    letter-spacing: 2px;
+}
+
+#course-header span {
+    color: white;
+}
+
+/*================= EXTERNAL CARDS =================== */
+
+main section#course-details .external-card-container {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+main section#course-details .external-card {
+    cursor: pointer;
+    width: 15rem;
+    height: 6rem;
+    padding: 1.8rem;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.11);
+    margin: 20px 0;
+}
+
+main section#course-details .external-card .card-icon {
+    flex: 1; 
+}
+
+main section#course-details .external-card .card-icon span {
+    font-size: 35px;
+}
+
+main section#course-details .external-card .card-content {
+    flex: 2; 
+}
+/*=================== SECTION CENTER ======================*/
+
+section#center {
+    display: grid;
+    grid-template-columns: auto 300px;
+}
+
+/*=========== CLASS TABLE ===========*/
+
+table {
+    margin: 10px 40px;
+    width: 90%;
+    border-collapse: collapse; /*remove o espaço entre as bordas da tabela*/
+    border-spacing: 0;
+}
+
+table thead {
+    background: linear-gradient(to right, rgba(29,233,182, 10%), rgba(29,233,182, 10%));
+    height: 33px;
+}
+
+thead th:first-child {
+    border-radius: 100px 0 0 200px;
+}
+
+thead th:last-child {
+    border-radius: 0 100px 200px 0;
+}
+
+table thead th {
+    font-family: 'Noto Sans';
+    letter-spacing: 6%;
+    font-size: 14px;
+    color: #14A883;
+    font-weight: bold;
+}
+
+table tbody {
+    background-color: #fff;
+    border-top: 12px solid var(--bg-color);
+}
+
+table tbody td {
+    height: 47px;
+    text-align: center;
+}
+
+table tbody td:first-child {
+    border-radius: 16px 0 0 16px;
+}
+
+table tbody td:last-child {
+    border-radius: 0 16px 16px 0;
+}
+
+table tbody:last-child td:first-child {
+    border-radius: 16px 0 0 8px;
+}
+
+table tbody:last-child td:last-child {
+    border-radius: 0 16px 8px 0;
+}
+
+table h5 {
+    font-family: 'Noto Sans';
+    font-size: 14px;
+    color: #525359;
+}
+
+table tbody .task-delivery{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+table tbody .task-delivery > span {
+    color: #1DE9B6;
+}
+
+
+section#center .class-table-container {
+    padding: 10px 20px;
+}
+
+/*=========== NEXT TASKS ===========*/
+aside.next-tasks{
+    margin-top: 20px;
+    width: 300px;
+    height: 32rem;
+    border-radius: 12px;
+    background-color: #fff;
+}
