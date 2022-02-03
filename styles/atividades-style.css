@@ -153,3 +153,22 @@ table tbody span.complete {
 table tbody span.no-complete {
     color: rgb(255, 73, 73);
 }
+
+
+/*================== FOOTER ==================*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 65.5%;
+    margin-bottom: 3px;
+    border-top: 1px solid #CAD0D6;
+}
+
+footer a {
+    color: #555555;
+}
+
+footer a:hover {
+    color: #0D6952;
+}

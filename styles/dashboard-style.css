@@ -324,3 +324,20 @@ section#right {
 .class-active a:hover {
     background-color: #118f6fc5;
 }
+
+
+/*=========== FOOTER ===========*/
+footer {
+    width: 63.5%;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #CAD0D6;
+}
+
+footer a {
+    color: #555555;
+}
+
+footer a:hover {
+    color: #0D6952;
+}

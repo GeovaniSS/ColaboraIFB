@@ -1,3 +1,7 @@
+nav .nav-container {
+    z-index: 1;
+}
+
 main {
     display: grid;
     grid-template-columns: 300px auto;
@@ -13,10 +17,9 @@ main {
     color: white;
     font-family: 'Noto Sans';
     margin: 0 -50px;
-    padding: 100px 50px 80px 50px;
+    padding: 100px 50px 80px;
     top: 0;
     position: absolute;
-    overflow-x: hidden;
 }
 
 #course-header h2 {
@@ -32,7 +35,10 @@ main {
 }
 
 #course-header span {
-    color: white;
+    margin-bottom: 10px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    color: #fff;
 }
 
 /*================= EXTERNAL CARDS =================== */
@@ -73,13 +79,18 @@ main section#course-details .external-card .card-content {
 section#center {
     display: grid;
     grid-template-columns: auto 300px;
+    margin: 10px 55px;
 }
 
 /*=========== CLASS TABLE ===========*/
 
+section#center .class-table-container {
+    margin-right: 50px;
+}
+
 table {
-    margin: 10px 40px;
-    width: 90%;
+    margin: 10px;
+    width: 100%;
     border-collapse: collapse; /*remove o espaço entre as bordas da tabela*/
     border-spacing: 0;
 }
@@ -148,16 +159,40 @@ table tbody .task-delivery > span {
     color: #1DE9B6;
 }
 
-
-section#center .class-table-container {
-    padding: 10px 20px;
-}
-
 /*=========== NEXT TASKS ===========*/
 aside.next-tasks{
-    margin-top: 20px;
+    margin-top: 32px;
+    margin-right: 50px;
     width: 300px;
-    height: 32rem;
+    height: 30rem;
     border-radius: 12px;
     background-color: #fff;
+    position: relative;
+}
+
+aside .next-tasks-header h3 {
+    position: absolute;
+    left: 8%;
+    top: 12%;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+aside .next-tasks-header img {
+    position: absolute;
+    top: -5%;
+    left: 15%;
+    width: 350px;
+}
+
+aside .next-tasks-content h5 {
+
+}
+
+aside .next-tasks-content h4 {
+    
+}
+
+aside .next-tasks-content span {
+    
 }
