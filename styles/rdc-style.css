@@ -160,9 +160,9 @@ table tbody .task-delivery > span {
 }
 
 /*=========== NEXT TASKS ===========*/
-aside.next-tasks{
-    margin-top: 32px;
-    margin-right: 50px;
+
+.next-tasks{
+    margin: 32px 50px 0 0;
     width: 300px;
     height: 30rem;
     border-radius: 12px;
@@ -170,7 +170,11 @@ aside.next-tasks{
     position: relative;
 }
 
-aside .next-tasks-header h3 {
+.next-tasks-header {
+    width: 100%;
+}
+
+.next-tasks-header h3 {
     position: absolute;
     left: 8%;
     top: 12%;
@@ -178,21 +182,34 @@ aside .next-tasks-header h3 {
     font-size: 1.4rem;
 }
 
-aside .next-tasks-header img {
+.next-tasks-header img {
     position: absolute;
     top: -5%;
     left: 15%;
     width: 350px;
 }
 
-aside .next-tasks-content h5 {
-
+.next-tasks-container {
+    margin: 200px 20px;
 }
 
-aside .next-tasks-content h4 {
-    
+.next-tasks-content {
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-aside .next-tasks-content span {
-    
+.next-tasks-content h4 {
+    font-weight: bold;
+    font-family: 'Noto Sans';
+    color: #525359;
+}
+
+.next-tasks-content span {
+    font-family: 'Noto Sans';
+    font-size: 12px;
+    background-color: rgba(149, 255, 122, 51%);
+    text-transform: uppercase;
+    padding: 2px 8px;
+    color: #525359;
+    border-radius: 12px;
 }
