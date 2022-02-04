@@ -9,72 +9,368 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <link rel="stylesheet" href="../styles/nav-style.css">
     <link rel="stylesheet" href="../styles/menu-style.css">
+    <link rel="stylesheet" href="../styles/rdc-style.css">
 </head>
 <body>
-         <!--NAVIGATION-->
-         <nav>
-            <div class="nav-container">
-                <div class="logo-area">
-                    <img src="../img/logo.png" class="logo">
-                    <h1>iEducar</h1>
+    <!--NAVIGATION-->
+    <nav>
+        <div class="nav-container">
+            <div class="logo-area">
+                <img src="../img/logo.png" class="logo">
+                <h1>ColaboraIFB</h1>
+            </div>
+
+            <div class="search-bar">
+                <input type="search" placeholder="Buscar">
+                <span class="material-icons-sharp">search</span>
+            </div>
+
+            <div class="profile-area">
+                <div class="notification-btn">
+                    <button><span class="material-icons-sharp">notifications</span></button>
+                    <!--COLOCAR JAVASCRIPT // INTERAÇÃO COM O BOTÃO DE NOTIFICAÇÕES-->
                 </div>
-    
-                <div class="search-bar">
-                    <input type="search" placeholder="Search">
-                    <span class="material-icons-sharp">search</span>
-                </div>
-    
-                <div class="profile-area">
-                    <div class="notification-btn">
-                        <button><span class="material-icons-sharp">notifications</span></button>
-                        <!--COLOCAR JAVASCRIPT // INTERAÇÃO COM O BOTÃO DE NOTIFICAÇÕES-->
+
+                <div class="profile">
+                    <div class="profile-photo">
+                        <img src="../img/profile-photo.png">
                     </div>
+                    <h5>Usuário</h5>
+                    <span class="material-icons-sharp">expand_more</span>
+                    <!--COLOCAR JAVASCRIPT // INTERAÇÃO COM O BOTÃO DE DROPDOWN-->
+                </div>
+            </div>
+        </div>
+    </nav>
     
-                    <div class="profile">
-                        <div class="profile-photo">
-                            <img src="../img/profile-photo.png">
-                        </div>
-                        <h5>Usuário</h5>
-                        <span class="material-icons-sharp">expand_more</span>
-                        <!--COLOCAR JAVASCRIPT // INTERAÇÃO COM O BOTÃO DE DROPDOWN-->
+    <!--MAIN-->
+    <main> 
+        <!--MENU-->
+        <aside>
+            <div class="sidebar">
+                <a href="dashboard.html">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">calendar_month</span>
+                    <h3>Calendário</h3>
+                </a>
+                <a href="cursos.html">
+                    <span class="material-icons-sharp">book</span>
+                    <h3>Cursos</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">attach_file</span>
+                    <h3>Atividades</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">cast_for_education</span>
+                    <h3>Externos</h3>
+                </a>
+        
+                <a href="../index.html">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Sair</h3>
+                </a>
+            </div>
+        </aside>
+
+        <section id="course-details">
+            <div class="course-header">
+                <span class="material-icons-sharp">arrow_back</span> <!--ADICIONAR JAVASCRIPT-->
+                <h2>Curso</h2>
+                <h1>Construção de Páginas</h1>
+            </div>
+            <div class="external-card-container">
+                <div class="external-card">
+                    <div class="card-icon">
+                        <span class="material-icons-sharp">videocam</span>
+                    </div>
+                    <div class="card-content">
+                        <h5>ACESSAR</h5>
+                        <h4>Google Meet</h4>
+                    </div>
+                </div>
+
+                <div class="external-card">
+                    <div class="card-icon">
+                        <span class="material-icons-sharp">book</span>
+                    </div>
+                    <div class="card-content">
+                        <h5>ACESSAR</h5>
+                        <h4>Nead - IFB</h4>
+                    </div>
+                </div>
+
+                <div class="external-card">
+                    <div class="card-icon">
+                        <span class="material-icons-sharp">school</span>
+                    </div>
+                    <div class="card-content">
+                        <h5>ACESSAR</h5>
+                        <h4>Portal do Aluno</h4>
+                    </div>
+                </div>
+
+                
+                <div class="external-card">
+                    <div class="card-icon">
+                        <span class="material-icons-sharp">attach_file</span>
+                    </div>
+                    <div class="card-content">
+                        <h5>ACESSAR</h5>
+                        <h4>Plano de Curso</h4>
                     </div>
                 </div>
             </div>
-        </nav>
+            </div>
+
+            <section id="course-classes">
+                <div class="class-table-container">
+                    <table>
+                        <thead>
+                            <tr class="task-title">
+                                <th>VIDEOAULA</th>
+                                <th>TIPO</th>
+                                <th>DATA</th>
+                                <th>PRESENÇA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h5>Capítulo 11 - Criação de uma rede pequena</h5>
+                                </td>
+                                <td>
+                                    <h5>Assíncrona</h5>
+                                </td>
+                                <td>    
+                                    <h5>17/01/22</h5>
+                                </td>
+                                <td class="class-attendance">
+                                    <span class="material-icons-sharp complete">check_circle</span>
+                                    <h5>Presente</h5>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h5>Capítulo 10 - Camada de Aplicação</h5>
+                                </td>
+                                <td>
+                                    <h5>Assíncrona</h5>
+                                </td>
+                                <td>    
+                                    <h5>10/01/22</h5>
+                                </td>
+                                <td class="class-attendance">
+                                    <span class="material-icons-sharp complete">check_circle</span>
+                                    <h5>Presente</h5>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h5>Capítulo 9 - Camada de Transporte</h5>
+                                </td>
+                                <td>
+                                    <h5>Assíncrona</h5>
+                                </td>
+                                <td>    
+                                    <h5>08/01/22</h5>
+                                </td>
+                                <td class="class-attendance">
+                                    <span class="material-icons-sharp noattendance">cancel</span>
+                                    <h5 class="icon-center">Falta</h5>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h5>Capítulo 8 - Divisão de Rede IP em Sub-redes</h5>
+                                </td>
+                                <td>
+                                    <h5>Assíncrona</h5>
+                                </td>
+                                <td>    
+                                    <h5>20/12/21</h5>
+                                </td>
+                                <td class="class-attendance">
+                                    <span class="material-icons-sharp noattendance">cancel</span>
+                                    <h5 class="icon-center">Falta</h5>
+                                </td>
+                            </tr>
+                        </tbody>
     
-        <!--MAIN-->
-        <main> 
-            <!--MENU-->
-            <aside>
-                <div class="sidebar">
-                    <a href="dashboard.html">
-                        <span class="material-icons-sharp">grid_view</span>
-                        <h3>Dashboard</h3>
-                    </a>
-                    <a href="#">
-                        <span class="material-icons-sharp">calendar_month</span>
-                        <h3>Calendário</h3>
-                    </a>
-                    <a href="cursos.html">
-                        <span class="material-icons-sharp">book</span>
-                        <h3>Cursos</h3>
-                    </a>
-                    <a href="#">
-                        <span class="material-icons-sharp">attach_file</span>
-                        <h3>Atividades</h3>
-                    </a>
-                    <a href="#">
-                        <span class="material-icons-sharp">cast_for_education</span>
-                        <h3>Externos</h3>
-                    </a>
-            
-                    <a href="../index.html">
-                        <span class="material-icons-sharp">logout</span>
-                        <h3>Sair</h3>
-                    </a>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h5>Capítulo 7 - Endereçamento IP</h5>
+                                </td>
+                                <td>
+                                    <h5>Assíncrona</h5>
+                                </td>
+                                <td>    
+                                    <h5>06/12/21</h5>
+                                </td>
+                                <td class="class-attendance">
+                                    <span class="material-icons-sharp noattendance">cancel</span>
+                                    <h5 class="icon-center">Falta</h5>
+                                </td>
+                            </tr>
+                        </tbody>
+    
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h5>Capítulo 6 - Camada de Rede</h5>
+                                </td>
+                                <td>
+                                    <h5>Assíncrona</h5>
+                                </td>
+                                <td>    
+                                    <h5>29/11/22</h5>
+                                </td>
+                                <td class="class-attendance">
+                                    <span class="material-icons-sharp complete">check_circle</span>
+                                    <h5>Presente</h5>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h5>Capítulo 5 - Protocolo Ethernet</h5>
+                                </td>
+                                <td>
+                                    <h5>Assíncrona</h5>
+                                </td>
+                                <td>    
+                                    <h5>13/11/21</h5>
+                                </td>
+                                <td class="class-attendance">
+                                    <span class="material-icons-sharp complete">check_circle</span>
+                                    <h5>Presente</h5>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h5>Capítulo 4 - Camada de Acesso à Rede</h5>
+                                </td>
+                                <td>
+                                    <h5>Assíncrona</h5>
+                                </td>
+                                <td>    
+                                    <h5>25/10/21</h5>
+                                </td>
+                                <td class="class-attendance">
+                                    <span class="material-icons-sharp complete">check_circle</span>
+                                    <h5>Presente</h5>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h5>Capítulo 3 - Comunicação e Protocolos de Rede</h5>
+                                </td>
+                                <td>
+                                    <h5>Assíncrona</h5>
+                                </td>
+                                <td>    
+                                    <h5>11/10/21</h5>
+                                </td>
+                                <td class="class-attendance">
+                                    <span class="material-icons-sharp complete">check_circle</span>
+                                    <h5>Presente</h5>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h5>Capítulo 2 - Configurando o Sistema Operacional de Rede</h5>
+                                </td>
+                                <td>
+                                    <h5>Assíncrona</h5>
+                                </td>
+                                <td>    
+                                    <h5>09/10/21</h5>
+                                </td>
+                                <td class="class-attendance">
+                                    <span class="material-icons-sharp complete">check_circle</span>
+                                    <h5>Presente</h5>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h5>Capítulo 1 - Explore a Rede</h5>
+                                </td>
+                                <td>
+                                    <h5>Assíncrona</h5>
+                                </td>
+                                <td>    
+                                    <h5>04/10/22</h5>
+                                </td>
+                                <td class="class-attendance">
+                                    <span class="material-icons-sharp complete">check_circle</span>
+                                    <h5>Presente</h5>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </aside>
-        </main>
-    
+                <div class="next-tasks">
+                    <div class="next-tasks-header">
+                        <h3>Próximas <br> Atividades</h3>
+                        <img src="../img/tasks.png" alt="">
+                    </div>
+                    <div class="next-tasks-container">
+                        <div class="next-tasks-content">
+                            <h5>20 de Dezembro</h5>
+                            <h4>Exame dos Módulos 8-10</h4>
+                            <span class="task-type">Atividade</span>
+                        </div>
+                        <div class="next-tasks-content">
+                            <h5>17 de Janeiro</h5>
+                            <h4>Exame dos Módulos 14-15</h4>
+                            <span class="task-type">Atividade</span>
+                        </div>
+                        <div class="next-tasks-content">
+                            <h5>31 de Janeiro</h5>
+                            <h4>Exame Final de Redes</h4>
+                            <span class="task-type test">Prova</span>
+                        </div>
+                    </div>
+                    <div class="task-view-button">
+                        <a href="atividades.html">Ver todas</a>
+                    </div>
+                </div>
+                <footer>
+                    <a href="https://github.com/GeovaniSS">
+                        <p>&copy;2022 - Desenvolvido por Geovani Silva</p>
+                    </a>
+                </footer>
+            </section>
+        </section>
+    </main>
+    <script src="../scripts/menu.js"></script>
+    <script src="../scripts/courses.js"></script>
 </body>
 </html>
