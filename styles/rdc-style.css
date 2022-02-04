@@ -11,10 +11,10 @@ main {
 
 /*================= COURSE HEADER =================== */
 
-#course-header {
+main section#course-details .course-header {
     width: 100%;
     background: linear-gradient(to bottom, rgba(20, 168, 131, 20%), rgba(20,168,131));
-    color: white;
+    color: #fff;
     font-family: 'Noto Sans';
     margin: 0 -50px;
     padding: 100px 50px 80px;
@@ -22,23 +22,23 @@ main {
     position: absolute;
 }
 
-#course-header h2 {
+.course-header span {
+    margin-bottom: 10px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.course-header h2 {
     text-transform: uppercase;
     font-size: 24px;
     font-weight: normal;
     letter-spacing: 3px;
 }
 
-#course-header h1 {
+.course-header h1 {
     font-size: 42px;
     letter-spacing: 2px;
-}
-
-#course-header span {
-    margin-bottom: 10px;
-    border: 3px solid #fff;
-    border-radius: 50px;
-    color: #fff;
 }
 
 /*================= EXTERNAL CARDS =================== */
@@ -50,41 +50,47 @@ main section#course-details .external-card-container {
     position: relative;
 }
 
-main section#course-details .external-card {
+.external-card {
     cursor: pointer;
     width: 15rem;
     height: 6rem;
-    padding: 1.8rem;
     display: flex;
     align-items: center;
     background-color: #fff;
     border-radius: 12px;
     box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.11);
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
-main section#course-details .external-card .card-icon {
+.external-card .card-icon {
     flex: 1; 
+    display: flex;
+    justify-content: center;
 }
 
-main section#course-details .external-card .card-icon span {
-    font-size: 35px;
+.external-card .card-icon span {
+    font-size: 38px;
 }
 
-main section#course-details .external-card .card-content {
+.external-card:last-child .card-icon span {
+    transform: rotate(35deg);
+}
+
+.external-card .card-content {
     flex: 2; 
 }
+
 /*=================== SECTION CENTER ======================*/
 
-section#center {
+main section#course-classes {
     display: grid;
     grid-template-columns: auto 300px;
-    margin: 10px 55px;
+    padding: 10px 55px;
 }
 
 /*=========== CLASS TABLE ===========*/
 
-section#center .class-table-container {
+main section#course-classes .class-table-container {
     margin-right: 50px;
 }
 
@@ -98,6 +104,7 @@ table {
 table thead {
     background: linear-gradient(to right, rgba(29,233,182, 10%), rgba(29,233,182, 10%));
     height: 33px;
+    text-align: center;
 }
 
 thead th:first-child {
@@ -110,7 +117,7 @@ thead th:last-child {
 
 table thead th {
     font-family: 'Noto Sans';
-    letter-spacing: 6%;
+    letter-spacing: 1px;
     font-size: 14px;
     color: #14A883;
     font-weight: bold;
@@ -130,7 +137,7 @@ table tbody td:first-child {
     border-radius: 16px 0 0 16px;
 }
 
-table tbody td:last-child {
+table tbody td.class-attendance {
     border-radius: 0 16px 16px 0;
 }
 
@@ -138,7 +145,7 @@ table tbody:last-child td:first-child {
     border-radius: 16px 0 0 8px;
 }
 
-table tbody:last-child td:last-child {
+ table tbody:last-child td:last-child {
     border-radius: 0 16px 8px 0;
 }
 
@@ -148,20 +155,29 @@ table h5 {
     color: #525359;
 }
 
-table tbody .task-delivery{
+table tbody td.class-attendance{
     display: flex;
     gap: 5px;
     justify-content: center;
     align-items: center;
 }
 
-table tbody .task-delivery > span {
+table tbody td.class-attendance > span {
     color: #1DE9B6;
+}
+
+table tbody td.class-attendance span.noattendance {
+    justify-self: stretch;
+    color: rgb(255, 73, 73);
+}
+
+table tbody td.class-attendance > h5.icon-center{
+    padding-right: 25px;
 }
 
 /*=========== NEXT TASKS ===========*/
 
-.next-tasks{
+main section#course-classes .next-tasks{
     margin: 32px 50px 0 0;
     width: 300px;
     height: 30rem;
@@ -198,18 +214,65 @@ table tbody .task-delivery > span {
     margin-bottom: 20px;
 }
 
+.next-tasks-content h5 {
+    font-size: 14px;
+    font-family: 'Noto Sans';
+    color: #525359;
+}
+
 .next-tasks-content h4 {
     font-weight: bold;
     font-family: 'Noto Sans';
     color: #525359;
 }
 
-.next-tasks-content span {
+.next-tasks-content .task-type {
     font-family: 'Noto Sans';
+    font-weight: 500;
     font-size: 12px;
     background-color: rgba(149, 255, 122, 51%);
     text-transform: uppercase;
     padding: 2px 8px;
     color: #525359;
     border-radius: 12px;
+}
+
+.next-tasks-content .task-type.test {
+    background-color: rgba(253, 0, 0, 30%);
+}
+
+/*=========== NEXT TASKS - BUTTON ===========*/
+.task-view-button {
+    position: absolute;
+    bottom: 2%;
+    right: 3%;
+    font-size: 14px;
+}
+
+.task-view-button a {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 8px;
+    background-color: #14A883;
+    color: #fff;
+}
+
+.task-view-button a:hover {
+    background-color: #0e6952c9;
+}
+
+/*================== FOOTER ==================*/
+
+footer {
+    width: 100%;
+    margin: 20px 0;
+    border-top: 1px solid #CAD0D6;
+}
+
+footer a {
+    color: #555555;
+}
+
+footer a:hover {
+    color: #0D6952;
 }
