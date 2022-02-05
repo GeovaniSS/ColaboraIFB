@@ -48,7 +48,7 @@ for (let i = 0; i < couseCardsLength; i++) {
     }
 }
 
-/*======================================== CALENDÁRIO ======================================== */
+/*======================================= CALENDÁRIO ======================================== */
 const monthText = document.querySelector('.calendar-month h3')
 const weekDays = document.querySelector('.calendar-week')
 const monthDays = document.querySelector('.calendar-day')
@@ -96,6 +96,31 @@ document.querySelector('.calendar-month span:last-child').addEventListener('clic
 
 
 /*======================================== AULAS SÍNCRONAS ======================================== */
+
+/*================== TODAY CLASS =======================*/
+const todayClass = document.querySelector('.aulas > h5') 
+const weekClass = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"]
+
+for (let i in weekClass) {
+    if (i == new Date().getDay()) {
+        todayClass.innerHTML = `${weekClass[i]},`
+    }
+}
+
+for (let i = 1; i <= 31; i++) {
+    if (i == new Date().getDate()) {
+        todayClass.innerHTML += ` ${i} de `
+    }
+}
+
+for (let i in months) {
+    if (i == new Date().getMonth()) {
+        todayClass.innerHTML += months[i]
+    }
+}
+
+
+/*================== CLASS LINK =======================*/
 const aulaSelecionada = document.querySelector('.class-option') //Div da aula do dia
 const informaçõesdaAula = document.querySelector('.class-active') //Div da aula clicada
 const abrirAula = document.querySelector('.class-active a')
