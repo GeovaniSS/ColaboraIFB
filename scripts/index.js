@@ -7,9 +7,8 @@ function Login() {
     if (email.value === '' || senha.value === '') {
         window.alert('[ERRO] Digite o e-mail e a senha')
     }
-
-    if (email.value != '@estudante.ifb.edu.br') {
-        window.alert('[ERRO] Utilize o e-mail institucional do IFB')
+    else {
+        window.open('/views/dashboard.html', '_self')
     }
 }
 

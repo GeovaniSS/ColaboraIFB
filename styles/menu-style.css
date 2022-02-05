@@ -78,15 +78,15 @@ main aside .sidebar a span {
 /*     Animações do Menu     */
 /*--------------------------*/
 
-main aside .sidebar a:hover  {
+main aside .sidebar a:hover:not(.active) {
     background: linear-gradient(to right, rgba(29,233,182, 10%), rgba(29,233,182, 10%));
 }
 
-main aside .sidebar a:hover span {
+main aside .sidebar a:hover:not(.active) span {
     margin-left: 3.5rem;
 }
 
-main aside .sidebar a:hover::after {
+main aside .sidebar a:hover:not(.active)::after {
     content: '';
     width: 6px;
     height: 100%;

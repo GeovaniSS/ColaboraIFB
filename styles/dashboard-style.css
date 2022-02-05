@@ -201,8 +201,62 @@ section#right {
 .calendar {
     width: 290px;
     height: 250px;
+    padding: 10px 20px;
     background-color: #fff;   
     border-radius: 12px; 
+}
+
+.calendar .calendar-month {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar .calendar-month span {
+    cursor: pointer;
+}
+
+.calendar .calendar-day {
+   margin-top: 10px;
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+   justify-items: center;
+   justify-items: center;
+   gap: 6px 0;
+}
+
+.calendar .calendar-day div {
+    transition: 0.1s;
+}
+
+.calendar .calendar-day div.today {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    color: #fff;
+    background-color: #14A883;
+    border-radius: 50%;
+}
+
+.calendar .calendar-day div:hover:not(.today) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.calendar .calendar-week {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.calendar .calendar-week div {
+    font-weight: bold;
+    color: #8D90A3;
 }
 
 /*=========== AULAS SÍNCRONAS ===========*/
