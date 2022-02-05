@@ -1,8 +1,13 @@
 @charset "UTF-8";
 
+body {
+    overflow-y: hidden;
+}
+
+/*=================== MAIN ==================== */
 main {
     display: grid;
-    grid-template-columns: 300px auto;
+    grid-template-columns: 1fr 6fr;
     gap: 50px;
     margin-right: 50px;
 }
@@ -10,7 +15,7 @@ main {
 main h1 {
     margin: 20px 0; 
 }
-
+/*=================== COURSE CARDS ==================== */
 main section#cursos .course-card-container {
     margin-top: 25px;
     display: flex;
@@ -19,7 +24,7 @@ main section#cursos .course-card-container {
 }
 
 main section#cursos .course-card {
-    width: 16em;
+    width: 16rem;
     height: 19rem;
     border-radius: 16px;
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.164);
@@ -80,18 +85,15 @@ main section#cursos .course-content h5 {
     color: #737583;
 }
 
+/*=================== FOOTER ==================== */
+
 footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    margin-bottom: 3px;
     border-top: 1px solid #CAD0D6;
 }
 
 footer a {
     color: #555555;
-}
-
-footer a:hover {
-    color: #0D6952;
 }

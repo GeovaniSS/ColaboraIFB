@@ -1,14 +1,23 @@
+@charset "UTF-8"; 
+
+body {
+    overflow-y: hidden;
+}
+
+/*============ MAIN ============ */
 main {
     display: grid;
-    grid-template-columns: 300px auto;
+    grid-template-columns: 1fr 6fr;
     gap: 50px;
     margin-right: 50px;
 }
 
+/*============ EXTERNAL CARDS ============ */
 .external-card-container {
     margin-top: 2.5rem;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .external-card {
@@ -23,6 +32,7 @@ main {
     text-transform: uppercase;
     box-shadow: 4px 7px 8px rgba(0, 0, 0, 0.212);
     border-radius: 8px;
+    transition: 0.5s;
 }
 
 .external-card img {
@@ -39,23 +49,19 @@ main {
     font-weight: 400;
     letter-spacing: -5.5%;
     color: #fff;
+}
 
+.external-card:hover {
+    margin-top: -1rem;
 }
 
 /*================== FOOTER ==================*/
-
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    margin-bottom: 3px;
+    margin-top: 34rem;
+    grid-column: 2/4;
     border-top: 1px solid #CAD0D6;
 }
 
 footer a {
     color: #555555;
-}
-
-footer a:hover {
-    color: #0D6952;
 }

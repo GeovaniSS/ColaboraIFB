@@ -48,6 +48,15 @@ for (let i = 0; i < couseCardsLength; i++) {
     }
 }
 
+/*======================================== TASKS ================================================*/
+const taskTable = document.querySelectorAll('table tbody')
+console.log(taskTable)
+
+for (i = 0; i < taskTable.length; i++) {
+    taskTable[i].addEventListener('click', () => {
+        window.open('http://127.0.0.1:5500/views/atividades.html', "_self")
+    })
+}
 /*======================================= CALENDAR ======================================== */
 const monthText = document.querySelector('.calendar-month h3')
 const weekDays = document.querySelector('.calendar-week')
@@ -95,11 +104,10 @@ document.querySelector('.calendar-month span:last-child').addEventListener('clic
     actualMonth = actualMonth + 1
     monthText.innerHTML = `${months[actualMonth]} ${new Date().getFullYear()}`
 })
-
 /*======================================== AULAS SÍNCRONAS ======================================== */
 
 /*================== TODAY CLASS =======================*/
-const todayClass = document.querySelector('.aulas > h5') 
+const todayClass = document.querySelector('.online-class > h5') 
 const weekClass = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"]
 
 for (let i in weekClass) {

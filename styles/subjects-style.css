@@ -1,5 +1,13 @@
+body {
+    overflow-x: hidden;
+}
+
 nav .nav-container {
     z-index: 1;
+}
+
+main aside {
+    height: 110vh;
 }
 
 main {
@@ -86,7 +94,7 @@ main section#course-details .external-card-container {
 main section#course-classes {
     display: grid;
     grid-template-columns: auto 300px;
-    padding: 10px 55px;
+    padding: 10px 55px 0;
 }
 
 /*=========== CLASS TABLE ===========*/
@@ -265,15 +273,11 @@ main section#course-classes .next-tasks{
 /*================== FOOTER ==================*/
 
 footer {
-    width: 100%;
-    margin: 20px 0;
+    width: 97%;
+    margin-top: 1.2rem;
     border-top: 1px solid #CAD0D6;
 }
 
 footer a {
     color: #555555;
-}
-
-footer a:hover {
-    color: #0D6952;
 }

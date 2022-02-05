@@ -1,12 +1,18 @@
 @charset "UTF-8"; 
 
+body {
+    overflow-y: hidden;
+}
+
+/*================== MAIN ==================*/
 main {
     display: grid;
-    grid-template-columns: 300px auto;
+    grid-template-columns: 1fr 6fr;
     gap: 50px;
     margin-right: 50px;
 }
 
+/*================== CALENDAR ==================*/
 .calendar {
     margin-top: 20px;
     width: 100%;
@@ -82,7 +88,6 @@ main {
     font-weight: bold;
     letter-spacing: 2px;
     padding: 4px 8px;
-    text-shadow: 1px 1px #0a0a0a71;;
 }
 
 .calendar .days {
@@ -93,16 +98,47 @@ main {
 
 .calendar .days div {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
     border: 1px solid #ccc;
-    padding: 5px 15px;
+    padding: 5px 10px 5px 10px;
     transition: 0.5s;
 }
 
 .calendar .days div.today {
-    background-color: #0d69521a;
+    background-color: #138b6d1a;
 }
 
 .calendar .days div:hover {
-    background-color: #0d69521a;
+    background-color: #138b6d1a;
+}
+
+.calendar .days div span {
+    cursor: pointer;
+    align-self: flex-start;
+    font-size: 13px;
+    padding: 1px 8px;
+    border-radius: 12px;
+    color: rgb(243, 243, 243);
+    margin-bottom: 5px;
+}
+
+.calendar .days div span.course {
+    background-color: #87f776;
+}
+
+.calendar .days div span.task {
+    background-color: #FF5574;
+}
+
+/*================== FOOTER ==================*/
+footer {
+    margin-top: 1.7rem;
+    grid-column: 2/4;
+    border-top: 1px solid #CAD0D6;
+}
+
+footer a {
+    color: #555555;
 }

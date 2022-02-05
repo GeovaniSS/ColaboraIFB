@@ -17,10 +17,34 @@ for (let i in week) {
 /*================ MONTH DAYS ================ */
 for (let i = 1; i <= 31; i++) {
     if (i == new Date().getDate()) {
-        monthDays.innerHTML += `<div class="today">${i}</div>`
+        monthDays.innerHTML += `<div class="today">${i} <span class ="course">Construção de Páginas</span> <span class="task">Projeto Final</span></div>`
     }
     else {
-        monthDays.innerHTML += `<div>${i}</div>`
+        switch (i) {
+            case 2: 
+                monthDays.innerHTML += `<div>${i} <span class ="course">Redes de Computadores</span> <span class="task">Exame Final</span></div>`
+                break
+
+            case 3:
+                monthDays.innerHTML += `<div>${i} <span class ="course">Lógica de Programação</span> <span class="task">2° Prova</span></div>`
+                break
+
+            case 4: 
+                 monthDays.innerHTML += `<div>${i} <span class ="course">Computação</span> <span class="task">Prova de IaC</span></div>`
+                 break
+
+            case 5: 
+                 monthDays.innerHTML += `<div>${i} <span class ="course">Construção de Páginas</span> <span class="task">Exame Final</span></div>`
+                 break
+
+            case 6:
+                 monthDays.innerHTML += `<div>${i} <span class ="course">Metodologia Científica</span> <span class="task">Trabalho Final</span></div>`
+                 break
+
+            default: 
+                monthDays.innerHTML += `<div>${i}</div>`
+                break
+        }
     }
 }
 

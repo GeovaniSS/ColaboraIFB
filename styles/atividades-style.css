@@ -2,9 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
 
+body {
+    overflow-y: hidden;
+}
+
+/*================== MAIN ==================*/
 main {
     display: grid;
-    grid-template-columns: 300px auto;
+    grid-template-columns: 1fr 6fr;
     gap: 50px;
 }
 
@@ -14,7 +19,7 @@ section#middle .task-table-container {
     padding: 25px 0;
 }
 
-section#middle .task-table-header {
+.task-table-header {
     width: 80%;
     display: flex;
     justify-content: space-between;
@@ -22,7 +27,8 @@ section#middle .task-table-header {
     margin-bottom: 15px;
 }
 
-section#middle .task-table-header .create-task-button {
+.task-table-header .create-task-button {
+    cursor: pointer;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -32,43 +38,45 @@ section#middle .task-table-header .create-task-button {
     padding: 10px 20px;
 }
 
-section#middle .create-task-button span, .create-task-button h4 {
+.create-task-button span, .create-task-button h4 {
     color: #fff;
 }
 
-section#middle .create-task-button h4 {
+.create-task-button h4 {
     text-transform: uppercase;
     font-family: 'Poppins';
     font-size: 16px;
     letter-spacing: 1px;
 }
 
-section#middle .task-options-area {
+.task-options-area {
     display: flex;
     align-items: center;
     gap: 35px;
 }
 
-section#middle .task-options-area span, h4, h5{
+.task-options-area span, h4, h5{
     color: #525359;
 }
 
-section#middle .task-options-area h5 {
+.task-options-area h5 {
     font-size: 16px;
 }
 
-section#middle .task-filter {
+.task-filter {
+    cursor: pointer;
     display: flex;
     gap: 5px;
 }
 
-section#middle .task-results-area {
+.task-results-area {
     display: flex; 
     align-items: center;
     gap: 10px;
 }
 
-section#middle .task-results {
+.task-results {
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,7 +95,7 @@ table {
 
 table thead {
     background: linear-gradient(to right, rgba(29,233,182, 10%), rgba(29,233,182, 10%));
-    height: 40px;
+    height: 35px;
     text-transform: uppercase;
 }
 
@@ -103,7 +111,7 @@ table thead th {
     font-family: 'Noto Sans';
     letter-spacing: 6%;
     font-size: 15px;
-    color: #14A883;
+    color: #118366;
     font-weight: bold;
 }
 
@@ -154,21 +162,15 @@ table tbody span.no-complete {
     color: rgb(255, 73, 73);
 }
 
-
 /*================== FOOTER ==================*/
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 65.5%;
-    margin-bottom: 3px;
+    grid-column: 2/4;
+    width: 80%;
+    margin-top: 2.1rem;
     border-top: 1px solid #CAD0D6;
 }
 
 footer a {
     color: #555555;
-}
-
-footer a:hover {
-    color: #0D6952;
 }

@@ -2,17 +2,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
 
-/*=================== MAIN ==================== */
+body {
+    overflow-y: hidden;
+}
 
+/*=================== MAIN ==================== */
 main {
     display: grid;
-    grid-template-columns: 18.75rem auto 18.75rem;
+    grid-template-columns: 1fr 4fr 1fr;
     gap: 3rem; 
 }
 
 /*=================== SECTION MIDDLE ==================== */
 
 /*=========== EXTERNAL CARDS ===========*/
+
+main section#middle h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
 
 main section#middle .external-card-container {
     display: flex; 
@@ -29,7 +37,7 @@ main section#middle .external-card {
     background-color: #fff;
     border-radius: 12px;
     box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.11);
-    margin: 20px 0;  
+    margin: 10px 0;  
 }
 
 main section#middle .external-card .card-icon {
@@ -139,13 +147,14 @@ thead th:last-child {
 
 table thead th {
     font-family: 'Noto Sans';
-    letter-spacing: 6%;
+    letter-spacing: 1px;
     font-size: 14px;
     color: #14A883;
     font-weight: bold;
 }
 
 table tbody {
+    cursor: pointer; 
     background-color: #fff;
     border-top: 12px solid var(--bg-color);
 }
@@ -212,15 +221,30 @@ section#right {
     align-items: center;
 }
 
+.calendar .calendar-month h3 {
+    color: #292C3D;
+}
+
 .calendar .calendar-month span {
     cursor: pointer;
 }
 
+.calendar .calendar-week {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.calendar .calendar-week div {
+    font-weight: bold;
+    color: #8D90A3;
+}
+
 .calendar .calendar-day {
-   margin-top: 10px;
+   margin-top: 5px;
    display: grid;
    grid-template-columns: repeat(7, 1fr);
-   justify-items: center;
+   grid-template-rows: repeat(5, 3vh);
    justify-items: center;
    gap: 6px 0;
 }
@@ -233,7 +257,7 @@ section#right {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25px;
+    width: 30px;
     color: #fff;
     background-color: #14A883;
     border-radius: 50%;
@@ -244,24 +268,13 @@ section#right {
     justify-content: center;
     align-items: center;
     border: 1px solid #ccc;
-    width: 25px;
+    width: 30px;
     border-radius: 50%;
-}
-
-.calendar .calendar-week {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.calendar .calendar-week div {
-    font-weight: bold;
-    color: #8D90A3;
 }
 
 /*=========== AULAS SÍNCRONAS ===========*/
 
-.aulas {
+.online-class {
     position: relative;
     width: 300px;
     height: 514px;
@@ -270,27 +283,29 @@ section#right {
     padding: 15px;
 }
 
-.aulas h3 {
+.online-class h3 {
     margin-bottom: 5px;
 }
 
-.aulas h5 {
+.online-class h5 {
     font-style: italic;
 }
 
 .day-option {
+    cursor: pointer;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 2px 4px;
+    padding: 0px 4px;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 6px;
     position: absolute; 
     top: 5%;
     right: 6%;
 }
 
 .day-class {
+    cursor: pointer;
     margin-top: 20px;
     width: 100%;
     height: 300px;
@@ -305,19 +320,19 @@ section#right {
     border-left: 5px solid #14A883;
 }
 
-.day-class .class-option .class-information {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    margin: 5px 0; 
-}
-
 .day-class .class-option > h5 {
     font-size: 14px;
     font-family: 'Noto Sans';
     font-style: normal;
     color: #14A883;
     font-weight: bold;
+}
+
+.day-class .class-option .class-information {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 5px 0; 
 }
 
 .day-class .class-option .class-information > h6 {
@@ -333,7 +348,7 @@ section#right {
 /*=========== AULAS SELECIONADA ===========*/
 
 .class-active {
-    display: none; /*ADICIONAR JAVASCRIPT*/
+    display: none; /*Modal Script*/
     flex-direction: column;
     background-color: #F0F0F0;
     border-radius: 15px;
@@ -382,16 +397,11 @@ section#right {
 
 /*=========== FOOTER ===========*/
 footer {
-    width: 63.5%;
-    position: fixed;
-    bottom: 0;
+    margin-top: 2.9rem;
+    grid-column: 2/3;
     border-top: 1px solid #CAD0D6;
 }
 
 footer a {
     color: #555555;
-}
-
-footer a:hover {
-    color: #0D6952;
 }
