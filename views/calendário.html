@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <link rel="stylesheet" href="../styles/nav-style.css">
     <link rel="stylesheet" href="../styles/menu-style.css">
+    <link rel="stylesheet" href="../styles/calendar.css">
 </head>
 <body>
     <!--NAVIGATION-->
@@ -74,7 +75,28 @@
                 </a>
             </div>
         </aside>
+
+        <section id="s-calendar">
+            <h1>Calendário</h1>
+            <div class="calendar">
+                <div class="month">
+                    <div class="navigate-month">
+                        <span class="material-icons-sharp">navigate_before</span>
+                        <span class="material-icons-sharp">navigate_next</span>
+                    </div>
+                    <div class="current-month"></div>
+                    <div class="calendar-options">
+                        <span>Mês</span>
+                        <span>Semana</span>
+                        <span>Dia</span>
+                    </div>
+                </div>
+                <div class="week"></div>
+                <div class="days"></div>
+            </div>
+        </section>
     </main>
     <script src="../scripts/menu.js"></script>
+    <script src="../scripts/calendar.js"></script>
 </body>
 </html>

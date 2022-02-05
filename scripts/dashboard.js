@@ -48,7 +48,7 @@ for (let i = 0; i < couseCardsLength; i++) {
     }
 }
 
-/*======================================= CALENDÁRIO ======================================== */
+/*======================================= CALENDAR ======================================== */
 const monthText = document.querySelector('.calendar-month h3')
 const weekDays = document.querySelector('.calendar-week')
 const monthDays = document.querySelector('.calendar-day')
@@ -58,7 +58,7 @@ const months = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","A
 
 for (let i in months) {
     if (i == new Date().getMonth()) {
-        monthText.innerHTML = months[i]
+        monthText.innerHTML = `${months[i]} ${new Date().getFullYear()}`
     }
 }
 
@@ -84,16 +84,17 @@ for (let i = 1; i <= 31; i++) {
 }
 
 /*============ Previous Month e Next Month=============*/
+let actualMonth = months.indexOf("Fevereiro")
 
 document.querySelector('.calendar-month span:first-child').addEventListener('click', () => {
-    monthText.innerHTML = months[new Date().getMonth() - 1]
+    actualMonth = actualMonth - 1
+    monthText.innerHTML = `${months[actualMonth]} ${new Date().getFullYear()}`
  })
 
 document.querySelector('.calendar-month span:last-child').addEventListener('click', () => {
-    monthText.innerHTML = months[new Date().getMonth() + 1]
+    actualMonth = actualMonth + 1
+    monthText.innerHTML = `${months[actualMonth]} ${new Date().getFullYear()}`
 })
-
-
 
 /*======================================== AULAS SÍNCRONAS ======================================== */
 
@@ -112,6 +113,8 @@ for (let i = 1; i <= 31; i++) {
         todayClass.innerHTML += ` ${i} de `
     }
 }
+
+/*months = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"]*/
 
 for (let i in months) {
     if (i == new Date().getMonth()) {
