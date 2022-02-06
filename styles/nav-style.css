@@ -89,7 +89,7 @@ nav .search-bar {
     height: 40px;
     border-radius: 12px;
     background-color: var(--bg-color2);
-    position: absolute; /*Absoluto em relação ao nav-container */
+    position: absolute;
     left: 18%;
     padding: 10px;
 }
@@ -121,7 +121,7 @@ nav .profile-area {
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 3%;
+    right: 2%;
 }
 
 /*-------------------------------------*/

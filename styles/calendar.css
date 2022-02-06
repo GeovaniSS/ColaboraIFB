@@ -43,7 +43,7 @@ main {
 }
 
 .calendar .navigate-month span:hover {
-    background-color: #0D6952;
+    background-color: #118f6fc5;
     color: #fff;
 }
 
@@ -66,12 +66,12 @@ main {
 }
 
 .calendar .calendar-options span.active {
-    background-color: #0D6952;
+    background-color: #118f6fc5;
     color: #fff;
 }
 
 .calendar .calendar-options span:hover:not(.active) {
-    background-color: #0D6952;
+    background-color: #118f6fc5;
     color: #fff;
 }
 
@@ -79,7 +79,7 @@ main {
     margin-top: 10px;
     display: flex;
     justify-content: space-around;
-    background-color: #0D6952;
+    background-color: #118f6fc5;
     border-radius: 5px 5px 0 0;
 }
 
@@ -107,11 +107,12 @@ main {
 }
 
 .calendar .days div.today {
-    background-color: #138b6d1a;
+    background-color: #21d3a61a;
 }
 
 .calendar .days div:hover {
-    background-color: #138b6d1a;
+    background-color: #21d3a61a;
+    opacity: 90%;
 }
 
 .calendar .days div span {
@@ -120,16 +121,17 @@ main {
     font-size: 13px;
     padding: 1px 8px;
     border-radius: 12px;
-    color: rgb(243, 243, 243);
+    color: #525359;
+    font-weight: 500;
     margin-bottom: 5px;
 }
 
 .calendar .days div span.course {
-    background-color: #87f776;
+    background-color: rgb(149, 255, 122, 51%);
 }
 
 .calendar .days div span.task {
-    background-color: #FF5574;
+    background-color: rgb(253, 0, 0, 30%)
 }
 
 /*================== FOOTER ==================*/

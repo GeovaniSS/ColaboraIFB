@@ -10,6 +10,10 @@ main aside {
     height: 110vh;
 }
 
+main aside .sidebar a:last-child {
+    top: 10%;
+}
+
 main {
     display: grid;
     grid-template-columns: 300px auto;

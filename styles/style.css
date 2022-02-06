@@ -85,7 +85,24 @@ h1 {
 }
 
 .input-text {
+    display: flex;
+    flex-direction: column;
     position: relative; /*Container em cada input*/
+}
+
+.input-text span {
+    margin-top: 5px;
+    align-self: flex-end;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.input-text i.lock {
+    font-size: 20px;
+    position: absolute; 
+    top: 45px;
+    right: 15px;
+    color: #CCCCCC;
 }
 
 .label-text { 
@@ -94,7 +111,7 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     position: absolute; 
     color: #949494;
-    top: 53px;
+    top: 43px;
     left: 50px;
     margin-bottom: 5px;
 }
@@ -103,7 +120,7 @@ h1 {
     /* Configuração do Label Personalizado - ícone (dentro do input) */
     font-size: 25px;
     position: absolute; 
-    top: 45px;
+    top: 35px;
     left: 15px;
     color: #CCCCCC;
 }
@@ -111,9 +128,9 @@ h1 {
 input {
     width: 400px;
     height: 45px;
-    margin-top: 40px;
+    margin-top: 30px;
     outline: none;
-    border-radius: 5px;
+    border-radius: 6px;
     border: 1px solid #d1d1d1;
     font-size: 18px;
     padding: 14px 30px 14px 50px; 
@@ -133,11 +150,11 @@ input:hover {
 }
 
 .input-text input:focus + .label-text, input:valid + .label-text {
-    top: 15px;   /*O label que estava como "placeholder" vai subir e se posicionar como label (em cima do input) */
+    top: 10px;   /*O label que estava como "placeholder" vai subir e se posicionar como label (em cima do input) */
     left: 5px;   /*Com o input:valid se o input for válido, o label não retornará para sua posição inicial */ 
 } 
 
-.input-text input:focus ~ .label-icon, input:valid ~ .label-icon{
+.input-text input:focus ~ .label-icon i, input:valid ~ .label-icon i{
     color: #14A883;  /*O ícone vai mudar de cor junto com o focus do input*/ 
                        /*O ícone permanecerá na cor verde, caso o campo seja válido*/ 
 }
@@ -147,6 +164,7 @@ input:hover {
 /*-------------------------------*/
 
 input[type="submit"] {
+    margin-top: 20px;
     width: 300px;
     height: 50px;
     border-radius: 40px;

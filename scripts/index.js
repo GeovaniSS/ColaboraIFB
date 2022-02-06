@@ -7,7 +7,7 @@ function Login() {
     if (email.value === '' || senha.value === '') {
         window.alert('[ERRO] Digite o e-mail e a senha')
     }
-    else {
+    else{
         window.open('/views/dashboard.html', '_self')
     }
 }
