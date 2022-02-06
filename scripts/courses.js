@@ -17,7 +17,7 @@ for (let i = 0; i < externalCardLink.length; i++) {
         if (location.pathname == '/views/rdc.html') {
             switch (i) {
                 case 0:
-                    window.open(' http://meet.google.com/yno-qynd-uee', "_blank")
+                    window.open('http://meet.google.com/yno-qynd-uee', "_blank")
                     break
             
                 case 1:

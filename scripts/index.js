@@ -8,7 +8,7 @@ function Login() {
         window.alert('[ERRO] Digite o e-mail e a senha')
     }
     else{
-        window.open('/views/dashboard.html', '_self')
+        window.open('./views/dashboard.html', '_self')
     }
 }
 

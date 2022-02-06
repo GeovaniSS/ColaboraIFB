@@ -34,15 +34,15 @@ for (let i = 0; i < couseCardsLength; i++) {
     function acessarCursos() {
         switch(i) {
             case 0:
-                window.open('http://127.0.0.1:5500/views/rdc.html', "_self")
+                window.open('rdc.html', "_self")
                 break
 
             case 1:
-                window.open('http://127.0.0.1:5500/views/ldp.html', "_self")
+                window.open('ldp.html', "_self")
                 break
                 
             case 2:
-                window.open('http://127.0.0.1:5500/views/cpi.html', "_self")
+                window.open('cpi.html', "_self")
                 break
         }
     }
@@ -54,7 +54,7 @@ console.log(taskTable)
 
 for (i = 0; i < taskTable.length; i++) {
     taskTable[i].addEventListener('click', () => {
-        window.open('http://127.0.0.1:5500/views/atividades.html', "_self")
+        window.open('atividades.html', "_self")
     })
 }
 /*======================================= CALENDAR ======================================== */
